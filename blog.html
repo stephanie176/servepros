@@ -7,164 +7,458 @@
   <link rel="stylesheet" href="/css/mainmin.css">
   <title>Servepros - Blog</title>
 </head>
-<body>
+<body class="bg-white position-relative">
   <!-- header -->
-  <header>
-    <!-- main head -->
-    <div>
-      <!-- logo -->
-      <div>
-
-      </div>
-      <!-- contact and request -->
-      <div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-
-    <!-- nav -->
-    <nav></nav>
-
-    <!-- services dropdown -->
-    <div>
-      <div>
-        <div></div>
-        <div>
-          <!-- service 1 -->
-          <div>
-            <div>
-              <i></i>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
-          <!-- service 2 -->
-          <div>
-            <div>
-              <i></i>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
-          <!-- service 3 -->
-          <div>
-            <div>
-              <i></i>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
-          <!-- service 4 -->
-          <div>
-            <div>
-              <i></i>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
-          <!-- service 5 -->
-          <div>
-            <div>
-              <i></i>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
+  <header class="bg-white text-primary">
+    <div class="container py-1">
+      <!-- main head -->
+      <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+        <!-- logo -->
+        <div class="h-50">
+          <a href="index.html">
+            <img src="/assets/logo.png" class="img-fluid w-auto" alt="">
+          </a>
         </div>
-        <div></div>
-      </div>
-    </div>
-
-    <!-- resources dropdown -->
-      <div>
-      <div>
-        <div></div>
-        <div>
-          <!-- resource 1 -->
-          <div>
+        <!-- contact and request -->
+        <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center">
             <div>
-              <i></i>
-              <p></p>
+              <i class="bi bi-headset fs-1"></i>
             </div>
-            <div></div>
-          </div>
-          <!-- resource 2 -->
-          <div>
             <div>
-              <i></i>
-              <p></p>
+              <p class="m-0 text-nowrap">Got Question? Call us 24/7</p>
+              <p>0704 700 0305</p>
             </div>
-            <div></div>
           </div>
-          <!-- resource 3 -->
-          <div>
-            <div>
-              <i></i>
-              <p></p>
-            </div>
-            <div></div>
-          </div>
+          <a href="#" class="ms-3 btn btn-secondary text-white text-nowrap">
+            Request A Quote
+          </a>
         </div>
-      </div>
+      </div>   
     </div>
   </header>
 
+  <!-- nav -->
+  <nav class="navbar navbar-expand-md w-100">
+    <div class="container h-100 position-relative">
+      <!-- toggle button -->
+      <button class="navbar-toggler border-1 ms-auto mb-1 bg-white focus-ring-width" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse collapse-bar fw-semibold" id="main-nav">
+        <div class="container d-flex navv flex-column flex-md-row justify-content-center align-content-center">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li class="dropdown w-100 position-static">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu p-3 bg-white">
+              <div class="container bg-body-tertiary h-100 rounded-3 text-primary">
+                <div>
+                  <h3 class="fw-semibold">Services</h3>
+                  <p>
+                    At Servepros, we provide a comprehensive suite of logistics services designed to meet the diverse needs of our clients:
+                  </p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 services my-3">
+                  <!-- service 1 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/support.png" class="img-fluid" alt="">
+                        <p>On-Demand Delivery:</p>
+                      </div>
+                      <div>
+                        <p>
+                          Whether it’s urgent or routine, we handle your packages with the utmost care and speed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 2 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/support.png" class="img-fluid" alt="">
+                        <p>Same-Day Delivery:</p>
+                      </div>
+                      <div>
+                        <p>
+                          For urgent shipments that need to be delivered within hours.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 3 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/world-distribution.png" class="img-fluid" alt="">
+                        <p>Next-Day Delivery:</p>
+                      </div>
+                      <div>
+                        <p>
+                          Secure, reliable deliveries by the following day.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 4 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/courier.png" class="img-fluid" alt="">
+                        <p>Scheduled Delivery:</p>
+                      </div>
+                      <div>
+                        <p>
+                          Plan your shipments ahead of time to ensure convenience.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 5 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/support.png" class="img-fluid" alt="">
+                        <p>Business Solutions:</p>
+                      </div>
+                      <div>
+                        <p>
+                          Tailored delivery solutions to meet corporate and bulk shipment needs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100 bg-secondary p-2 text-white rounded-3">
+                  <p>
+                    Our technology-driven platform ensures seamless service with real-time tracking, automated notifications, and responsive support, making the logistics experience hassle-free.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown w-100 position-static">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu p-3 bg-white">
+              <div class="container bg-body-tertiary h-100 rounded-3 text-primary">
+                <div>
+                  <h3 class="fw-semibold">Resources</h3>
+                  <p>
+                    Stay updated on logistics trends, delivery tips, and Servepros news. Explore our resources to get the most out of your delivery services:
+                  </p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 services my-3">
+                  <!-- service 1 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/support.png" class="img-fluid" alt="">
+                        <p>Blog</p>
+                      </div>
+                      <div>
+                        <p>
+                          Industry insights and best practices.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 2 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/support.png" class="img-fluid" alt="">
+                        <p>Guides</p>
+                      </div>
+                      <div>
+                        <p>
+                          Step-by-step guides to maximize delivery efficiency.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 3 -->
+                  <div class="col">
+                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                      <div class="d-flex gap-2">
+                        <img src="/assets/world-distribution.png" class="img-fluid" alt="">
+                        <p>FAQs</p>
+                      </div>
+                      <div>
+                        <p>
+                          Answers to common questions about our services and processes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- hero section -->
-  <section>
-    <img src="" alt="">
-    <div></div>
+  <section class="hero position-relative text-white mb-3 bg-primary">
+    <!-- hero background image -->
+    <div class="w-md-50 w-100 d-md-flex justify-content-md-end h-100">
+      <img src="/assets/hero-bg.png" alt="truck on map" class="img-fluid h-100">
+    </div>
+
+    <!-- hero section text -->
+    <div class="position-absolute top-0 h-100 w-100">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <p>Blog</p>
+          <p> Industry insights and best practices</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- blog group 1 -->
-  <section>
-  <div>
-    <div></div>
-    <div></div>
-  </div>
-  </section>
-
-  <!-- blog group 2 -->
-  <section>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- footer and newsletter -->
-  <section>
-    <!-- subscribe to newsletter -->
-    <div>
-      <div></div>
-      <div></div>
-    </div>
-    <!-- footer -->
-    <footer>
-      <!-- logo and nav -->
-      <div>
-        <!-- logo and sub info -->
-        <div></div>
-
-        <!-- contact and quick links -->
-        <div>
-          <!-- contact info -->
-          <div></div>
-          <!-- quick links -->
-          <div>
-            <div></div>
-            <div></div>
+  <section class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-3  text-primary">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex">
+              <span class="text-secondary">#industry</span>
+              <pre>   </pre>
+              <p>Anthony Ha / 9:00 AM  • September 13, 2024</p>
+            </div>
+            <div>
+              <h5 class="text-decoration-underline">Sustainability in Logistics: Strategies for Reduction</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Eget nullam dolor diam tristique etiam molestie nulla. Malesuada ipsum morbi et rutrum faucibus pellentesque. Enim aliquet ac phasellus egestas.</p>
+            </div>
           </div>
         </div>
       </div>
+      <!-- column 2 -->
+      <div class="col p-3">
+        <div class="">
+          <div class="d-flex">
+            <span class="text-secondary">
+              Supply Chain Optimization
+            </span>
+            <pre>   </pre>
+            <p>Anthony Ha • September 13, 2024</p>
+          </div>
+          <div>
+            <h5 class="text-decoration-underline">Sustainability in Logistics: Strategies for Reduction</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Duis arcu risus ut nullam commodo elit semper. Sit varius tellus velit mattis dui eleifend enim.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="">
+          <div class="d-flex">
+            <span class="text-secondary">#industry</span>
+            <pre>   </pre>
+            <p>Anthony Ha • September 13, 2024</p>
+          </div>
+          <div>
+            <h5 class="text-decoration-underline">Sustainability in Logistics: Strategies for Reduction</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Duis arcu risus ut nullam commodo elit semper. Sit varius tellus velit mattis dui eleifend enim.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="">
+          <div class="d-flex">
+            <span class="text-secondary">#industry</span>
+            <pre>   </pre>
+            <p>Anthony Ha • September 13, 2024</p>
+          </div>
+          <div>
+            <h5 class="text-decoration-underline">Sustainability in Logistics: Strategies for Reduction</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Duis arcu risus ut nullam commodo elit semper. Sit varius tellus velit mattis dui eleifend enim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blog group 2 -->
+  <section class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <div class="col">
+        <div class="h-100">
+          <div>
+            <img src="" alt="">
+            <div class="text-center">
+              Read
+            </div>
+          </div>
+          <div>
+            <p class="text-primary">Supply Chain Optimization</p>
+            <p class="text-decoration-underline">
+              The Benefits of Just-in-Time Delivery
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100">
+          <div>
+            <img src="" alt="">
+            <div class="text-center">
+              Read
+            </div>
+          </div>
+          <div>
+            <p class="text-primary">Supply Chain Optimization</p>
+            <p class="text-decoration-underline">
+              The Benefits of Just-in-Time Delivery
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100">
+          <div>
+            <img src="" alt="">
+            <div class="text-center">
+              Read
+            </div>
+          </div>
+          <div>
+            <p class="text-primary">Supply Chain Optimization</p>
+            <p class="text-decoration-underline">
+              The Benefits of Just-in-Time Delivery
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100">
+          <div>
+            <img src="" alt="">
+            <div class="text-center">
+              Read
+            </div>
+          </div>
+          <div>
+            <p class="text-primary">Supply Chain Optimization</p>
+            <p class="text-decoration-underline">
+              The Benefits of Just-in-Time Delivery
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- subscribe to newsletter -->
+  <section class="bg-white text-white position-relative">
+    <div class="container-md">
+      <div class="bg-secondary d-md-flex flex-md-wrap justify-content-between align-items-center px-4 py-4 rounded-4 mx-auto">
+        <div class="text-center text-md-start mb-3 mb-md-0">
+          <h3 class="fw-bold">Subscribe to <br>Our newsletter</h3>
+        </div>
+        <div>
+          <form action="#">
+            <div class="bg-primary d-flex rounded-3 w-auto">
+              <input type="email" id="email" name="email" placeholder="Your email here..." class="rounded-3 border-1 w-100 p-2">
+              <a href="#" class="p-2 text-white text-decoration-none">Submit </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary text-white">
+    <!-- footer -->
+    <footer class="container pt-5">
+      <!-- logo and nav -->
+      <div class="d-md-flex justify-content-md-between align-items-center gap-md-5 pt-5">
+        <div class="d-flex align-items-center justify-content-between py-4">
+          <!-- logo and sub info -->
+          <div>
+            <div class="mb-2">
+              <img src="/assets/logo-white.png" alt="" class="img-fluid">
+            </div>
+            <div class="w-75">
+              <p>
+                Team of specialists doctors and nurses are trained to offer comprehend
+              </p>
+            </div>
+          </div>
+          
+          <!-- contact info -->
+          <div class="">
+            <p class="fw-semibold">Contact Info</p>
+            <div>
+              <p class="pb-1 d-inline-block border-3 border-bottom border-light">info@servepros.com</p>
+            </div>
+            <div>
+              <p class="pb-1 d-inline-block border-3 border-bottom border-light">info@servepros.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- quick links -->
+        <div class="w-50">
+          <p class="fw-semibold text-white">Quick Links</p>
+          <div class="row row-cols-2 g-4 text-white-50">
+            <div class="col">
+              <div>
+                <p class="pb-1 d-inline-block border-3 border-bottom border-light">About Us</p>
+              </div>
+              <div>
+                <p class="pb-1 d-inline-block border-3 border-bottom border-light">Services</p>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <p class="pb-1 d-inline-block border-3 border-bottom border-light">Resources</p>
+              </div>
+              <div>
+                <p class="pb-1 d-inline-block border-3 border-bottom border-light">Contact Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
       <!-- copyright and social media -->
-      <div>
-        <div></div>
-        <div></div>
+      <div class="d-flex justify-content-between align-items-center py-4">
+        <div>
+          <p>Copyright ©2023 Servepro. All Rights Reserved</p>
+        </div>
+        <div class="d-flex gap-2">
+          <p>Follow Us:</p>
+          <a href="#" class="text-decoration-none text-white">
+            <i class="bi bi-instagram p-2 border border-white rounded-circle"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-white">
+            <i class="bi bi-facebook p-2 border border-white rounded-circle"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-white">
+            <i class="bi bi-twitter p-2 border border-white rounded-circle"></i>
+          </a>
+        </div>
       </div>
     </footer>
   </section> 

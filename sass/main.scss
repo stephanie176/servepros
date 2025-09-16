@@ -1,5 +1,128 @@
 $primary: #243561;
 $secondary: #1d93fe;
 $white: #fff;
+$light: rgba(246, 246, 246, 1);
+$tertiary: rgb(154, 164, 215);
+$focus-ring-width: 0rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navv li {
+  list-style: none;
+  font-weight: 600;
+  padding: 0;
+  width: 100%;
+}
+
+.navv a {
+  width: 100%;
+  padding: 8px 4.8dvw;
+  font-size: 14px;
+  text-wrap: nowrap;
+  text-decoration: none;
+  display: block;
+  background-color: $white;
+  border: 0.1px solid $primary;
+  box-shadow: 2px 2px 5px #d0d0d0;
+}
+
+.navbar .dropdown-menu {
+  margin: 0 auto;
+  width: 96%;
+  left: 0;
+  right: 0;
+  border-radius: 0;  
+  max-height: 85vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+@media(max-width:'576px') {
+  .collapse-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 3rem;
+    width: 100%;
+    z-index: 2;
+  }
+  .navbar .dropdown-menu {
+    max-height: 65vh;
+  }
+}
+
+.navv .services img {
+  width: 20px;
+  height: 20px;
+}
+
+// hero section
+.hero {
+  background-color: $primary;
+  height: 90dvh;
+}
+
+.hero .container {
+  padding-top: 5rem;
+}
+
+.hero-desc {
+  width: 60%;
+}
+
+@media(max-width:868px) {
+  .hero-desc {
+    width: 100%;
+  }
+}
+
+.hero-text {
+  font-size: clamp(2.6rem, 5vh, 4.2rem);
+}
+
+.padding-hero {
+  padding-top: clamp(2.5rem, 4vh, 3.1rem);
+}
+
+// landing page services
+// .services {
+//   height: 80dvh;
+// }
+
+// .services .vector {
+//   margin-left: -2.8rem;
+//   z-index: -1;
+// }
+
+//landing page process 
+.process .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(36, 53, 97, 0.6);
+}
+
+.sides {
+  height: 85%;
+}
+
+.truck h4 {
+  font-size: 20px;
+}
+
+.truck p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
