@@ -30,7 +30,7 @@
               <p>0704 700 0305</p>
             </div>
           </div>
-          <a href="#" class="ms-3 btn btn-secondary text-white text-nowrap">
+          <a href="contact.html" class="ms-3 btn btn-secondary text-white text-nowrap">
             Request A Quote
           </a>
         </div>
@@ -49,7 +49,7 @@
       <div class="collapse navbar-collapse collapse-bar fw-semibold" id="main-nav">
         <div class="container d-flex navv flex-column flex-md-row justify-content-center align-content-center">
           <li>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
             <a href="#">About us</a>
@@ -76,7 +76,7 @@
                       </div>
                       <div>
                         <p>
-                          Whether it’s urgent or routine, we handle your packages with the utmost care and speed.
+                          Whether it's urgent or routine, we handle your packages with the utmost care and speed.
                         </p>
                       </div>
                     </div>
@@ -161,52 +161,52 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 services my-3">
                   <!-- service 1 -->
                   <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/support.png" class="img-fluid" alt="">
-                        <p>Blog</p>
-                      </div>
-                      <div>
-                        <p>
-                          Industry insights and best practices.
-                        </p>
-                      </div>
-                    </div>
+                    <a href="blog.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                        <div class="d-flex gap-2">
+                          <img src="/assets/support.png" class="img-fluid" alt="">
+                          <p>Blog</p>
+                        </div>
+                        <div>
+                          <p class="text-wrap">
+                            Industry insights and best practices.
+                          </p>
+                        </div>
+                    </a>
                   </div>
                   <!-- service 2 -->
                   <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                    <a href="#" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
                       <div class="d-flex gap-2">
                         <img src="/assets/support.png" class="img-fluid" alt="">
                         <p>Guides</p>
                       </div>
                       <div>
-                        <p>
+                        <p class="text-wrap">
                           Step-by-step guides to maximize delivery efficiency.
                         </p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <!-- service 3 -->
                   <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                    <a href="faq.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
                       <div class="d-flex gap-2">
                         <img src="/assets/world-distribution.png" class="img-fluid" alt="">
                         <p>FAQs</p>
                       </div>
                       <div>
-                        <p>
+                        <p class="text-wrap">
                           Answers to common questions about our services and processes.
                         </p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
           </li>
         </div>
       </div>
@@ -224,7 +224,7 @@
     <div class="position-absolute top-0 h-100 w-100">
       <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <p>FAQs</p>
+          <h1>FAQs</h1>
           <p>Answers to common questions about our services and processes.</p>
         </div>
       </div>
@@ -234,135 +234,137 @@
   <!-- search button -->
   <section class="container">
     <form action="#">
-      <div>
-        <span>
-          <i class="bi bi-search"></i>
+      <div class="input-group">
+        <span class="input-group-text">
+          <a href="#"><i class="bi bi-search"></i></a>
         </span>
-        <input type="search" name="searchfaqs" id="searchfaqs" placeholder="Search">
+        <input type="search" name="searchfaqs" id="searchfaqs" placeholder="Search" class="form-control">
       </div>
     </form>
   </section>
   <hr>
 
   <!-- faqs -->
-  <div class="accordion accordion-flush" id="faqs">
-    <!-- faq 1 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
+  <section class="container my-3">
+    <div class="accordion accordion-flush" id="faqs">
+      <!-- faq 1 -->
+      <div class="accordion-item">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <!-- faq 2 -->
+      <div class="accordion-item">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <!-- faq 3 -->
+      <div class="accordion-item">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <!-- faq 4 -->
+      <div class="accordion-item">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <!-- faq 5 -->
+      <div class="accordion-item">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <!-- faq 6 -->
+      <div class="accordion-item">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <!-- faq 7 -->
+      <div class="accordion-item border-1 border-bottom border-dark-subtle">
+        <p class="accordion-header">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            How to send my parcel?
+          </button>
+        </p>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqs">
+          <div class="accordion-body text-body-tertiary">
+            <p>
+              Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
+            </p>  
+          </div>
         </div>
       </div>
     </div>
-    <!-- faq 2 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
-        </div>
-      </div>
-    </div>
-    <!-- faq 3 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
-        </div>
-      </div>
-    </div>
-    <!-- faq 4 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
-        </div>
-      </div>
-    </div>
-    <!-- faq 5 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
-        </div>
-      </div>
-    </div>
-    <!-- faq 6 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
-        </div>
-      </div>
-    </div>
-    <!-- faq 7 -->
-    <div class="accordion-item">
-      <p class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-          How to send my parcel?
-        </button>
-      </p>
-      <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqs">
-        <div class="accordion-body">
-          <p>
-            Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
-          </p>  
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <!-- page number -->
   <section class="container">
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center px-2 text-primary">
       <div>
         <p><span>1 - 14</span> of 200 results</p>
       </div>
-      <div class="d-flex">
+      <div class="d-flex gap-2">
         <p><span>1 of 16</span> pages</p>
-        <a href="#">Prev</a>
-        <a href="#">Next</a>
+        <a href="#" class="text-decoration-none">Prev</a>
+        <a href="#" class="text-decoration-none">Next</a>
       </div>
     </div>
   </section>

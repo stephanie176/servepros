@@ -2,6 +2,7 @@ $primary: #243561;
 $secondary: #1d93fe;
 $white: #fff;
 $light: rgba(246, 246, 246, 1);
+$info: #929ab0;
 $tertiary: rgb(154, 164, 215);
 $focus-ring-width: 0rem;
 
@@ -13,6 +14,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+// nav
 .navv li {
   list-style: none;
   font-weight: 600;
@@ -38,7 +40,7 @@ body {
   left: 0;
   right: 0;
   border-radius: 0;  
-  max-height: 85vh;
+  max-height: 90vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -53,9 +55,9 @@ body {
     width: 100%;
     z-index: 2;
   }
-  .navbar .dropdown-menu {
-    max-height: 65vh;
-  }
+  // .navbar .dropdown-menu {
+  //   max-height: 65vh;
+  // }
 }
 
 .navv .services img {
