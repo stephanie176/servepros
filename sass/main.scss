@@ -1,5 +1,6 @@
 $primary: #243561;
 $secondary: #1d93fe;
+$success: rgb(97, 110, 143);
 $white: #fff;
 $light: rgba(246, 246, 246, 1);
 $info: #929ab0;
@@ -12,9 +13,47 @@ $focus-ring-width: 0rem;
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+// header
+header {
+  margin-bottom: 0.9rem;
+  position: relative;
+}
+
+.nav-logo {
+  width: 186px;
+  height: 41px;
+}
+
+.header-cta i {
+  width: 42.5px;
+  height: 42.5px;
+}
+
+.header-cta p:nth-of-type(1) {
+  font-size: 14px;
+}
+
+.header-cta p:nth-of-type(2) {
+  font-size: 22px;
 }
 
 // nav
+.nav-section, .subscribe-container {
+  position: relative;
+}
+
+.nav-sec, .subscribe-box {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
 .navv li {
   list-style: none;
   font-weight: 600;
@@ -31,7 +70,12 @@ body {
   display: block;
   background-color: $white;
   border: 0.1px solid $primary;
-  box-shadow: 2px 2px 5px #d0d0d0;
+}
+
+@media (max-width: 992px) {
+  .navv a {
+    padding: 8px 1rem;
+  }
 }
 
 .navbar .dropdown-menu {
@@ -39,25 +83,24 @@ body {
   width: 96%;
   left: 0;
   right: 0;
-  border-radius: 0;  
+  border-radius: 0;
   max-height: 90vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-
-@media(max-width:'576px') {
+@media(max-width: 576px) {
   .collapse-bar {
     position: absolute;
     top: 0;
     left: 0;
     margin-top: 3rem;
     width: 100%;
-    z-index: 2;
   }
-  // .navbar .dropdown-menu {
-  //   max-height: 65vh;
-  // }
+}
+
+.nav-dropdown {
+  background: linear-gradient(to right, #e9ebef, #fff);
 }
 
 .navv .services img {
@@ -65,59 +108,140 @@ body {
   height: 20px;
 }
 
+.navv h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-services .service-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navv .service-desc, .why-sec .sub-desc {
+  color: $success;
+  font-weight: 500;
+  font-size: 13px;
+}
+
 // hero section
 .hero {
   background-color: $primary;
-  height: 90dvh;
-}
-
-.hero .container {
-  padding-top: 5rem;
+  height: 100dvh;
 }
 
 .hero-desc {
-  width: 60%;
+  width: 50%;
+  font-size: 15px;
 }
 
-@media(max-width:868px) {
+@media(max-width:998px) {
   .hero-desc {
     width: 100%;
   }
 }
 
 .hero-text {
-  font-size: clamp(2.6rem, 5vh, 4.2rem);
+  font-size: clamp(3.2rem, 6vh, 5rem);
 }
 
-.padding-hero {
-  padding-top: clamp(2.5rem, 4vh, 3.1rem);
+// landing page welcome section
+.welcome-sec .title, .services-sec .title, .why-sec .title, .blog-sec .title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-// landing page services
-// .services {
-//   height: 80dvh;
-// }
+.welcome-sec .desc {
+  font-size: 14px;
+}
 
-// .services .vector {
-//   margin-left: -2.8rem;
-//   z-index: -1;
-// }
+.welcome-sec .sub-desc, .partners p {
+  font-size: 14px;
+  font-weight: 500;
+  color: $success;
+}
+
+// landing page services section
+.services-sec h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.services-sec .service-desc {
+  font-size: 14px;
+  color: $success;
+}
+
+.services-sec .sub-desc {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+// landing page why section
+.why-box {
+  box-shadow: 1px 2px 4px 1px #eae9e9;
+}
 
 //landing page process 
 .process .title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 36px;
 }
 
-.desc {
-  font-size: 14px;
+.process .sub-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.process .desc {
+  font-size: 12px;
   font-weight: 500;
   color: rgba(36, 53, 97, 0.6);
 }
 
+.process img {
+  position: absolute;
+  bottom: -15%;
+  height: 100%;
+  width: 100%;
+}
+
+// landing page testimonials section
 .sides {
   height: 85%;
+}
+
+.testimonials-sec .testi {
+  font-size: 12px;
+}
+
+.testimonials .prof {
+  margin-top: -1rem;
+}
+
+.testimonials-sec .client {
+  font-size: 14px;
+}
+
+.testimonials i {
+  font-size: 56px;
+  color: #dadbdf;
+}
+
+// landing page book online section
+.book-online .form-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.book-online .form-control {
+  font-size: 13px;
+  color: $primary;
+}
+
+// landing page blog section
+.blog-sec {
+  margin-bottom: 5rem;
 }
 
 .truck h4 {
@@ -127,4 +251,29 @@ body {
 .truck p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
+}
+
+.blog-sec .blog-tag {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.blog-sec .blog-topic {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.blog-sec .blog-date {
+  font-size: 13px;
+}
+
+// blog page
+.blog-hero {
+  height: 50dvh;
+}
+
+// footer
+footer img {
+  width: 80%;
+  height: 100%;
 }

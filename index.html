@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="/css/mainmin.css" rel="stylesheet">
   <title>Servepros - Home</title>
 </head>
 <body class="bg-white position-relative">
   <!-- header -->
   <header class="bg-white text-primary">
-    <div class="container py-1">
+    <div class="container pt-1">
       <!-- main head -->
-      <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+      <div class="d-md-flex gap-3 justify-content-between align-items-center">
         <!-- logo -->
-        <div class="h-50">
+        <div class="nav-logo mb-3 mb-md-0">
           <a href="index.html">
-            <img src="/assets/logo.png" class="img-fluid w-auto" alt="">
+            <img src="/assets/logo.png" class="img-fluid" alt="">
           </a>
         </div>
         <!-- contact and request -->
-        <div class="d-flex align-items-center">
-          <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-top header-cta">
             <div>
               <i class="bi bi-headset fs-1"></i>
             </div>
             <div>
-              <p class="m-0 text-nowrap">Got Question? Call us 24/7</p>
-              <p>0704 700 0305</p>
+              <p class="m-0 text-nowrap fw-semibold">Got Question? Call us 24/7</p>
+              <p class="fw-semibold">0704 700 0305</p>
             </div>
           </div>
           <a href="contact.html" class="ms-3 btn btn-secondary text-white text-nowrap">
@@ -39,179 +40,183 @@
   </header>
 
   <!-- nav -->
-  <nav class="navbar navbar-expand-md w-100">
-    <div class="container h-100 position-relative">
-      <!-- toggle button -->
-      <button class="navbar-toggler border-1 ms-auto mb-1 bg-white focus-ring-width" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar links -->
-      <div class="collapse navbar-collapse collapse-bar fw-semibold" id="main-nav">
-        <div class="container d-flex navv flex-column flex-md-row justify-content-center align-content-center">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">About us</a>
-          </li>
-          <li class="dropdown w-100 position-static">
-            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu p-3 bg-white">
-              <div class="container bg-body-tertiary h-100 rounded-3 text-primary">
-                <div>
-                  <h3 class="fw-semibold">Services</h3>
-                  <p>
-                    At Servepros, we provide a comprehensive suite of logistics services designed to meet the diverse needs of our clients:
-                  </p>
-                </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 services my-3">
-                  <!-- service 1 -->
-                  <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/support.png" class="img-fluid" alt="">
-                        <p>On-Demand Delivery:</p>
-                      </div>
-                      <div>
-                        <p>
-                          Whether it's urgent or routine, we handle your packages with the utmost care and speed.
-                        </p>
-                      </div>
+  <section class="nav-section">
+    <div class="nav-sec">
+      <nav class="navbar navbar-expand-md w-100">
+        <div class="container h-100 position-relative">
+          <!-- toggle button -->
+          <button class="navbar-toggler border-1 ms-auto mb-1 bg-white focus-ring-width" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse collapse-bar fw-semibold" id="main-nav">
+            <div class="container d-flex navv flex-column flex-md-row justify-content-center align-content-center">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li class="dropdown w-100 position-static">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu p-3 bg-white">
+                  <div class="container nav-dropdown p-4 h-100 rounded-3 text-primary">
+                    <div>
+                      <h3>Services</h3>
+                      <p class="service-desc">
+                        At Servepros, we provide a comprehensive suite of logistics services designed to meet <br> the diverse needs of our clients:
+                      </p>
                     </div>
-                  </div>
-                  <!-- service 2 -->
-                  <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/support.png" class="img-fluid" alt="">
-                        <p>Same-Day Delivery:</p>
-                      </div>
-                      <div>
-                        <p>
-                          For urgent shipments that need to be delivered within hours.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- service 3 -->
-                  <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/world-distribution.png" class="img-fluid" alt="">
-                        <p>Next-Day Delivery:</p>
-                      </div>
-                      <div>
-                        <p>
-                          Secure, reliable deliveries by the following day.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- service 4 -->
-                  <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/courier.png" class="img-fluid" alt="">
-                        <p>Scheduled Delivery:</p>
-                      </div>
-                      <div>
-                        <p>
-                          Plan your shipments ahead of time to ensure convenience.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- service 5 -->
-                  <div class="col">
-                    <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/support.png" class="img-fluid" alt="">
-                        <p>Business Solutions:</p>
-                      </div>
-                      <div>
-                        <p>
-                          Tailored delivery solutions to meet corporate and bulk shipment needs.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-100 bg-secondary p-2 text-white rounded-3">
-                  <p>
-                    Our technology-driven platform ensures seamless service with real-time tracking, automated notifications, and responsive support, making the logistics experience hassle-free.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="dropdown w-100 position-static">
-            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Resources
-            </a>
-            <div class="dropdown-menu p-3 bg-white">
-              <div class="container bg-body-tertiary h-100 rounded-3 text-primary">
-                <div>
-                  <h3 class="fw-semibold">Resources</h3>
-                  <p>
-                    Stay updated on logistics trends, delivery tips, and Servepros news. Explore our resources to get the most out of your delivery services:
-                  </p>
-                </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 services my-3">
-                  <!-- service 1 -->
-                  <div class="col">
-                    <a href="blog.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                        <div class="d-flex gap-2">
-                          <img src="/assets/support.png" class="img-fluid" alt="">
-                          <p>Blog</p>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 nav-services my-3">
+                      <!-- service 1 -->
+                      <div class="col">
+                        <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/support.png" class="img-fluid" alt="">
+                            <p class="service-title">On-Demand Delivery:</p>
+                          </div>
+                          <div>
+                            <p class="service-desc">
+                              Whether it's urgent or routine, we handle your packages with the utmost care and speed.
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p class="text-wrap">
-                            Industry insights and best practices.
-                          </p>
+                      </div>
+                      <!-- service 2 -->
+                      <div class="col">
+                        <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/support.png" class="img-fluid" alt="">
+                            <p class="service-title">Same-Day Delivery:</p>
+                          </div>
+                          <div>
+                            <p class="service-desc">
+                              For urgent shipments that need to be delivered within hours.
+                            </p>
+                          </div>
                         </div>
-                    </a>
-                  </div>
-                  <!-- service 2 -->
-                  <div class="col">
-                    <a href="#" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/support.png" class="img-fluid" alt="">
-                        <p>Guides</p>
                       </div>
-                      <div>
-                        <p class="text-wrap">
-                          Step-by-step guides to maximize delivery efficiency.
-                        </p>
+                      <!-- service 3 -->
+                      <div class="col">
+                        <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/world-distribution.png" class="img-fluid" alt="">
+                            <p class="service-title">Next-Day Delivery:</p>
+                          </div>
+                          <div>
+                            <p class="service-desc">
+                              Secure, reliable deliveries by the following day.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </a>
-                  </div>
-                  <!-- service 3 -->
-                  <div class="col">
-                    <a href="faq.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
-                      <div class="d-flex gap-2">
-                        <img src="/assets/world-distribution.png" class="img-fluid" alt="">
-                        <p>FAQs</p>
+                      <!-- service 4 -->
+                      <div class="col">
+                        <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/courier.png" class="img-fluid" alt="">
+                            <p class="service-title">Scheduled Delivery:</p>
+                          </div>
+                          <div>
+                            <p class="service-desc">
+                              Plan your shipments ahead of time to ensure convenience.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <div>
-                        <p class="text-wrap">
-                          Answers to common questions about our services and processes.
-                        </p>
+                      <!-- service 5 -->
+                      <div class="col">
+                        <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/support.png" class="img-fluid" alt="">
+                            <p class="service-title">Business Solutions:</p>
+                          </div>
+                          <div>
+                            <p class="service-desc">
+                              Tailored delivery solutions to meet corporate and bulk shipment needs.
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </a>
+                    </div>
+                    <div class="w-100 bg-secondary rounded-3">
+                      <p class="text-white service-desc px-3 py-2">
+                        Our technology-driven platform ensures seamless service with real-time tracking, automated notifications, and responsive support, making the logistics experience hassle-free.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </li>
+              <li class="dropdown w-100 position-static">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resources
+                </a>
+                <div class="dropdown-menu p-3 bg-white">
+                  <div class="container nav-dropdown p-4 h-100 rounded-3 text-primary">
+                    <div>
+                      <h3>Resources</h3>
+                      <p class="service-desc">
+                        Stay updated on logistics trends, delivery tips, and Servepros news. Explore our <br> resources to get the most out of your delivery services:
+                      </p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 nav-services my-3">
+                      <!-- service 1 -->
+                      <div class="col">
+                        <a href="blog.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                            <div class="d-flex gap-2">
+                              <img src="/assets/support.png" class="img-fluid" alt="">
+                              <p class="service-title">Blog</p>
+                            </div>
+                            <div>
+                              <p class="service-desc text-wrap">
+                                Industry insights and best practices.
+                              </p>
+                            </div>
+                        </a>
+                      </div>
+                      <!-- service 2 -->
+                      <div class="col">
+                        <a href="#" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/support.png" class="img-fluid" alt="">
+                            <p class="service-title">Guides</p>
+                          </div>
+                          <div>
+                            <p class="service-desc text-wrap">
+                              Step-by-step guides to maximize delivery efficiency.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- service 3 -->
+                      <div class="col">
+                        <a href="faq.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                          <div class="d-flex gap-2">
+                            <img src="/assets/world-distribution.png" class="img-fluid" alt="">
+                            <p class="service-title">FAQs</p>
+                          </div>
+                          <div>
+                            <p class="service-desc text-wrap">
+                              Answers to common questions about our services and processes.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
             </div>
-          </li>
-          <li>
-            <a href="contact.html">Contact Us</a>
-          </li>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </section>
 
   <!-- hero section -->
   <section class="hero position-relative text-white mb-3 bg-primary">
@@ -221,52 +226,58 @@
     </div>
 
     <!-- hero section text -->
-    <div class="position-absolute top-0 h-100 w-100">
+    <div class="position-absolute top-0 bottom-0 h-100 w-100 pt-5">
       <div class="container">
         <p class="hero-text">Your <span class="fw-semibold">Packages,</span> <br> Delivered On <span class="fw-semibold">Time.</span> <br> Every Time.</p>
         <p class="text-capitalize hero-desc">At Servepros, we specialize in seamless logistics, offering on-demand delivery services tailored to meet your needs.</p>
-        <div>
-          <p></p>
-          <i></i>
-          <div></div>
+        <div class="d-flex align-items-center pb-2">
+          <p class="text-uppercase">more about servepros</p>
+          <div>
+            <a href="blog.html">
+              <img src="/assets/more.png" alt="img-fluid">
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- welcome section -->
-  <section class="container text-primary my-5">
-    <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
-      <div class="col-md-6 col">
+  <section class="container text-primary my-5 welcome-sec">
+    <div class="row row-cols-1 row-cols-lg-4 g-5 align-items-center">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 col text-center">
         <img src="/assets/welcome.png" alt="" class="img-fluid">
       </div>
-      <div class="col-md-6 col">
-        <p class="text-uppercase">We are servepros</p>
+      <div class="col-lg-5 col">
+        <p class="text-uppercase title">We are servepros</p>
         <h3 class="fw-bold">Welcome to Servepros,</h3>
-        <p class="fw-semibold">
+        <p class="fw-semibold desc">
           Servepros is a leading logistics company headquartered in Lagos, with offices in Ibadan, Nigeria. We specialize in on-demand delivery solutions, ensuring that packages reach their destinations safely and promptly.
         </p>
-        <p>
+        <p class="sub-desc">
           Our team of professionals works tirelessly to exceed client expectations, offering unparalleled service that meets the evolving needs of businesses and individuals alike. With our extensive delivery options and cutting-edge technology, we aim to set the standard for logistics excellence across Nigeria.
         </p>
       </div>
+      <div class="col-lg-1"></div>
     </div>
   </section>
+  
   <hr>
 
   <!-- services section -->
-  <section class="container my-5 services">
+  <section class="container my-5 services-sec text-primary">
     <div class="text-center mb-4">
-      <p class="text-uppercase">our services</p>
-      <h3 class="fw-bold fs-2">We offer a range of delivery services</h3>
+      <p class="text-uppercase title">our services</p>
+      <h3 class="fw-bold">We offer a range of delivery services</h3>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-5">
       <!-- service 1 -->
       <div class="col col-md-4 d-flex align-items-center h-100">
         <div class="h-100">
           <img src="/assets/support.png" alt="" class="img-fluid">
-          <h4 class="fw-semibold fs-5">Same-Day Delivery</h4>
-          <p class="fs-6">Fast, reliable delivery for urgent shipments within the same day.</p>
+          <h4 class="fw-semibold">Same-Day Delivery</h4>
+          <p class="service-desc">Fast, reliable delivery for urgent shipments within the same day.</p>
         </div>
         <!-- <div class="h-100 vector">
           <img src="/assets/vector.png" alt="" class="img-fluid h-100">
@@ -276,8 +287,8 @@
       <div class="col col-md-4 d-flex align-items-center h-100">
         <div class="h-100">
           <img src="/assets/world-distribution.png" alt="" class="img-fluid">
-          <h4 class="fw-semibold fs-5">Next-Day Delivery</h4>
-          <p class="fs-6">Guaranteed delivery by the next business day.</p>
+          <h4 class="fw-semibold">Next-Day Delivery</h4>
+          <p class="service-desc">Guaranteed delivery by the next business day.</p>
         </div>
         <!-- <div class="h-100 vector">
           <img src="/assets/vector.png" alt="" class="img-fluid h-100">
@@ -287,8 +298,8 @@
       <div class="col col-md-4 d-flex align-items-center h-100">
         <div class="h-100">
           <img src="/assets/support.png" alt="" class="img-fluid">
-          <h4 class="fw-semibold fs-5">Scheduled Delivery</h4>
-          <p class="fs-6">Plan and schedule deliveries at your convenience.</p>
+          <h4 class="fw-semibold">Scheduled Delivery</h4>
+          <p class="service-desc">Plan and schedule deliveries at your convenience.</p>
         </div>
         <!-- <div class="h-100 vector">
           <img src="/assets/vector.png" alt="" class="img-fluid h-100">
@@ -296,57 +307,58 @@
       </div>
     </div>
     <div>
-      <p>No matter where your package is headed—across town or across the country—<span class="text-secondary">Servepros ensures safe and timely delivery.</span></p>
+      <p class="sub-desc">No matter where your package is headed—across town or across the country—<span class="text-secondary">Servepros ensures safe and timely delivery.</span></p>
     </div>
     <hr>
   </section>
 
   <!-- why us -->
-  <section class="container my-5 text-primary">
+  <section class="container my-5 text-primary why-sec">
     <div>
-      <p class="text-uppercase">why us?</p>
+      <p class="text-uppercase title">why us?</p>
       <h3 class="fw-bold">We set ourselves apart with:</h3>
     </div>
     <div class="row row-cols-1 row-cols-md-3 mt-5 g-0">
       <!-- why 1 -->
       <div class="col col-md-4">
-        <div class="p-2 border border-dark w-100 h-100">
-          <img src="/assets/delivery-rider-with-parcel.png" alt="" class="img-fluid mb-2 rounded-3 w-100">
-          <p class="fw-bold mb-0">Customer-Centric Service:</p>
-          <p>Your satisfaction is our top priority.</p>
+        <div class="p-3 pb-0 border border-info-subtle w-100 h-100 why-box">
+          <img src="/assets/giving-parcel-client.png" alt="" class="img-fluid mb-2 rounded-3 w-100">
+          <p class="fw-bold mb-1 desc">Customer-Centric Service:</p>
+          <p class="sub-desc">Your satisfaction is our top priority.</p>
         </div>
       </div>
       <!-- why 2 -->
       <div class="col col-md-4">
-        <div class="p-2 border border-dark w-100 h-100">
+        <div class="p-3 pb-0 border border-info-subtle w-100 h-100 why-box">
           <img src="/assets/delivery-rider-with-parcel.png" alt="" class="img-fluid mb-2 rounded-3 w-100">
-          <p class="fw-bold mb-0">Expert Logistics Team:</p>
-          <p>Highly trained professionals manage your packages from pick-up to delivery.</p>
+          <p class="fw-bold mb-1 desc">Expert Logistics Team:</p>
+          <p class="sub-desc">Highly trained professionals manage your packages from pick-up to delivery.</p>
         </div>
       </div>
+      <!-- why 3 -->
       <div class="col col-md-4">
-        <div class="p-2 border border-dark w-100 h-100">
-          <img src="/assets/delivery-rider-with-parcel.png" alt="" class="img-fluid mb-2 rounded-3 w-100">
-          <p class="fw-bold mb-0">Cutting-Edge Technology: </p>
-          <p>Our user-friendly platform allows you to schedule, track, and receive real-time updates for your deliveries.</p>
+        <div class="p-3 pb-0 border border-info-subtle w-100 h-100 why-box">
+          <img src="/assets/delivery-person-with-parcels.png" alt="" class="img-fluid mb-2 rounded-3 w-100">
+          <p class="fw-bold mb-1 desc">Cutting-Edge Technology: </p>
+          <p class="sub-desc">Our user-friendly platform allows you to schedule, track, and receive real-time updates for your deliveries.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- process section -->
-  <section class="bg-primary process">
-    <div class="container py-2">
-      <h3 class="text-white text-center my-5 fw-bold">Our Process</h3>
+  <section class="bg-primary process mb-5">
+    <div class="container py-3">
+      <h3 class="text-white text-center my-4 mb-5 fw-bold title">Our Process</h3>
       <div class="row row-cols-2 row-cols-md-3 g-4">
         <div class="col">
-          <div class="row row-cols-1 gap-4">
+          <div class="row row-cols-1 gap-4 h-100">
             <!-- process 1 -->
             <div class="col">
               <div class="bg-white rounded-4 px-4 py-5 pb-3 h-100">
-                <span class="text-white bg-secondary p-2 rounded-2 fw-semibold fs-3">01</span>
+                <span class="text-white mb-0 bg-secondary p-2 rounded-2 fw-semibold fs-3">01</span>
                 <br>
-                <p class="py-3 my-3 border-bottom border-secondary border-3 w-75 title">Order Placement:</p>
+                <p class="py-3 pb-1 my-2 border-bottom border-secondary border-3 w-75 sub-title">Order Placement:</p>
                 <p class="desc">
                   Place your delivery request via our online platform.
                 </p>
@@ -355,9 +367,9 @@
             <!-- process 3 -->
             <div class="col">
               <div class="bg-white rounded-4 px-4 py-5 pb-3 h-100">
-                <span class="text-white bg-secondary p-2 rounded-2 fw-semibold fs-3">03</span>
+                <span class="text-white mb-0 bg-secondary p-2 rounded-2 fw-semibold fs-3">03</span>
                 <br>
-                <p class="py-3 my-3 border-bottom border-secondary border-3 w-75 title">Real-Time Tracking:</p>
+                <p class="py-3 pb-1 my-2 border-bottom border-secondary border-3 w-75 sub-title">Real-Time Tracking:</p>
                 <p class="desc">
                   Monitor the journey of your package through our system, from pickup to delivery.
                 </p>
@@ -367,18 +379,18 @@
         </div>
 
         <!-- rider image -->
-        <div class="col d-none d-md-block">
+        <div class="col d-none d-md-block position-relative">
           <img src="/assets/delivery-guy.png" alt="" class="img-fluid">
         </div>
 
         <div class="col">
-          <div class="row row-cols-1 gap-4">
+          <div class="row row-cols-1 gap-4 h-100">
             <!-- process 2 -->
             <div class="col">
               <div class="bg-white rounded-4 px-4 py-5 pb-3 h-100">
-                <span class="text-white bg-secondary p-2 rounded-2 fw-semibold fs-3">02</span>
+                <span class="text-white mb-0 bg-secondary p-2 rounded-2 fw-semibold fs-3">02</span>
                 <br>
-                <p class="py-3 my-3 border-bottom border-secondary border-3 w-75 title">Package Pickup:</p>
+                <p class="py-3 pb-1 my-2 border-bottom border-secondary border-3 w-75 sub-title">Package Pickup:</p>
                 <p class="desc">
                   Place your delivery request via our online platform.
                 </p>
@@ -387,9 +399,9 @@
             <!-- process 4 -->
             <div class="col">
               <div class=" bg-white rounded-4 px-4 py-5 pb-3 h-100">
-                <span class="text-white bg-secondary p-2 rounded-2 fw-semibold fs-3">04</span>
+                <span class="text-white mb-0 bg-secondary p-2 rounded-2 fw-semibold fs-3">04</span>
                 <br>
-                <p class="py-3 my-3 border-bottom border-secondary border-3 w-75 title">Delivery Confirmation:</p>
+                <p class="py-3 pb-1 my-2 border-bottom border-secondary border-3 w-75 sub-title">Delivery Confirmation:</p>
                 <p class="desc">
                   Receive instant confirmation when your package is safely delivered.
                 </p>
@@ -401,50 +413,56 @@
     </div>
   </section>
 
-  <div class="bg-white h-25 d-none d-md-block"></div>
+  <div class="bg-white text-white h-50 d-none d-md-block">
+    -
+  </div>
 
   <!-- testimonials -->
-  <section class="bg-light py-5 text-primary">
+  <section class="bg-light py-5 text-primary testimonials-sec">
     <div class="container">
       <!-- head -->
-      <div class="mb-4">
+      <div class="mb-4 d-flex justify-content-between align-items-center">
         <!-- title -->
         <div>
-          <p class="text-uppercase">testimonials</p>
-          <h3 class="text-capitalize">what clients say about us</h3>
+          <p class="text-uppercase title">testimonials</p>
+          <h3 class="text-capitalize fw-bold">what clients say <br> about us</h3>
         </div>
         <!-- buttons -->
         <div>
-
+          <a href="#" class="border border-1 border-primary rounded-circle p-2 me-2"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="border border-1 border-primary rounded-circle p-2 bg-primary"><i class="fa-solid fa-arrow-right text-white"></i></a>
         </div>
       </div>
 
       <!-- testimonials -->
-      <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="row row-cols-1 row-cols-md-3 g-3 testimonials">
         <div class="col align-content-around">
           <!-- testi 1 -->
           <div class="sides bg-white p-4 rounded-4">
-            <p>“Servepros has been our go-to for reliable deliveries. Their commitment to customer service is second to none.”</p>
-            <div class="d-flex justify-content-between">
-              <p>Adewale S., Lagos</p>
+            <p class="testi">“Servepros has been our go-to for reliable deliveries. Their commitment to customer service is second to none.”</p>
+            <div class="d-flex justify-content-between align-items-baseline prof">
+              <p class="client"><span class="fw-semibold">Adewale S.,</span> Lagos</p>
+              <i class="fa-solid fa-quote-right quote"></i>
             </div>
           </div>
         </div>
         <div class="col">
-          <!-- testi 1 -->
+          <!-- testi 2 -->
           <div class="bg-white p-4 rounded-4 h-100">
-            <p>“From the seamless online tracking to the on-time deliveries, Servepros consistently exceeds our expectations.”</p>
-            <div class="d-flex justify-content-between">
-              <p> Chinwe I., Ibadan</p>
+            <p class="testi">“From the seamless online tracking to the on-time deliveries, Servepros consistently exceeds our expectations.”</p>
+            <div class="d-flex justify-content-between align-items-baseline prof">
+              <p class="client"><span class="fw-semibold">Chinwe I.,</span> Ibadan</p>
+              <i class="fa-solid fa-quote-right quote"></i>
             </div>
           </div>
         </div>
         <div class="col align-content-around">
-          <!-- testi 1 -->
+          <!-- testi 3 -->
           <div class="sides bg-white p-4 rounded-4">
-            <p>“Servepros has been our go-to for reliable deliveries. Their commitment to customer service is second to none.”</p>
-            <div class="d-flex justify-content-between">
-              <p>Adewale S., Lagos</p>
+            <p class="testi">“Servepros has been our go-to for reliable deliveries. Their commitment to customer service is second to none.”</p>
+            <div class="d-flex justify-content-between align-items-baseline prof">
+              <p class="client"><span class="fw-semibold">Adewale S.,</span> Lagos</p>
+              <i class="fa-solid fa-quote-right quote"></i>
             </div>
           </div>
         </div>
@@ -453,11 +471,11 @@
   </section>
 
   <!-- partners -->
-  <section class="bg-white text-primary my-5">
+  <section class="bg-white text-primary my-5 partners">
     <div class="container text-center">
       <div class="w-75 mx-auto py-2">
         <div class="w-md-50 w-100 mx-auto">
-          <h3 class="text-capitalize">our partners</h3>
+          <h3 class="text-capitalize fw-bold">our partners</h3>
           <p>
             We are proud to collaborate with renowned partners across various industries, ensuring that our logistics solutions remain top-tier and efficient.
           </p>
@@ -476,49 +494,50 @@
   </section>
 
   <!-- book online -->
-  <section class="bg-primary text-primary p-5">
+  <section class="bg-primary text-primary px-2 py-5 book-online">
     <div class="container bg-white p-5 rounded-3">
       <div class="text-center">
-        <h3 class="fw-bold">Directly book online within seconds, 24/7.</h3>
+        <h3 class="fw-bold nav-dropdown d-inline-block p-2 px-4 rounded-2">Directly book online within seconds, 24/7.</h3>
       </div>
-      <div>
+      <div class="mb-5">
         <form action="#">
-          <div class="row row-cols-md-3 row-cols-1 g-3">
+          <div class="row row-cols-md-3 row-cols-1 g-3 my-4">
             <div class="col">
-              <div>
+              <div class="mb-3">
                 <label for="fullname" class="form-label">Full name</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Your name" class="w-100 rounded-2 border-1 p-1">
+                <input type="text" name="fullname" id="fullname" placeholder="Your name" class="form-control w-100 rounded-2 border-1 p-2">
               </div>
               <div>
                 <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" class="w-100 rounded-2 border-1 p-1">
+                <input type="email" name="email" id="email" placeholder="Your email" class="form-control w-100 rounded-2 border-1 p-2">
               </div>
             </div>
             <div class="col">
-              <div>
+              <div class="mb-3">
                 <label for="destination" class="form-label">Where would you like to go?</label>
-                <input type="text" name="destination" id="destination" placeholder="Select Destination" class="w-100 rounded-2 border-1 p-1">
+                <input type="text" name="destination" id="destination" placeholder="Select Destination" class="form-control w-100 rounded-2 border-1 p-2">
               </div>
               <div>
                 <label for="early-departure-date" class="form-label">Depart as early as</label>
-                <input type="datetime-local" name="early-departure-date" id="early-departure-date" placeholder="Select date" class="w-100 rounded-2 border-1 p-1">
+                <input type="datetime-local" name="early-departure-date" id="early-departure-date" placeholder="Select date" class="form-control w-100 rounded-2 border-1 p-2">
               </div>
             </div>
             <div class="col">
-              <div>
+              <div class="mb-3">
                 <label for="late-departure-date" class="form-label">Depart as late as</label>
-                <input type="datetime-local" name="late-departure-date" id="late-departure-date" placeholder="Select-destination" class="w-100 rounded-2 border-1 p-1">
+                <input type="datetime-local" name="late-departure-date" id="late-departure-date" placeholder="Select-destination" class="form-control w-100 rounded-2 border-1 p-2">
               </div>
               <div>
                 <label for="cabin-date" class="form-label">Travelers in cabin</label>
-                <input type="datetime-local" name="cabin-date" id="cabin-date" placeholder="Select date" class="w-100 rounded-2 border-1 p-1">
+                <input type="datetime-local" name="cabin-date" id="cabin-date" placeholder="Select date" class="form-control w-100 rounded-2 border-1 p-2">
               </div>
             </div>
           </div>
           <hr class="w-50 mx-auto">
-          <div class="text-center">
-            <input type="submit" value="Get Estimated" class="btn btn-secondary text-white w-50 py-2">
+          <div class="text-center my-2">
+            <input type="submit" value="Get Estimated" class="btn btn-secondary text-white w-75 py-2">
           </div>
+          <hr class="w-50 mx-auto">
         </form>
       </div>
       <div></div>
@@ -526,11 +545,11 @@
   </section>
 
   <!-- blog section -->
-  <section class="bg-white text-primary p-4">
+  <section class="bg-white text-primary p-4 blog-sec">
     <div class="container">
       <div class="text-center">
-        <p class="text-uppercase">our blog</p>
-        <h3 class="fw-bold">Stay updated on logistics trends, delivery tips, and Servepros news. </h3>
+        <p class="text-uppercase title">our blog</p>
+        <h3 class="fw-bold text-center">Stay updated on logistics trends, delivery <br> tips, and Servepros news. </h3>
       </div>
       <div class="row row-cols-1 row-cols-md-2 g-3">
         <div class="col">
@@ -547,33 +566,33 @@
             <!-- blog item 1 -->
             <div class="col">
               <div class="border border-1 border-primary-subtle rounded-4 p-3 h-100">
-                <p class="text-uppercase">industry insights</p>
+                <p class="text-uppercase blog-tag">industry insights</p>
                 <h6 class="text-uppercase pb-3 border-3 border-bottom border-secondary">the future of logistics: trends to watch</h6>
-                <p>October 09, 2022</p>
+                <p class="blog-date">October 09, 2022</p>
               </div>
             </div>
             <!-- blog item 2 -->
             <div class="col">
               <div class="border border-1 border-primary-subtle rounded-4 p-3 h-100">
-                <p class="text-uppercase">Supply Chain Optimization</p>
+                <p class="text-uppercase blog-tag">Supply Chain Optimization</p>
                 <h6 class="text-uppercase pb-3 border-3 border-bottom border-secondary">The Benefits of Just-in-Time Delivery</h6>
-                <p>October 09, 2022</p>
+                <p class="blog-date">October 09, 2022</p>
               </div>
             </div>
             <!-- blog item 3 -->
             <div class="col">
               <div class="border border-1 border-primary-subtle rounded-4 p-3 h-100">
-                <p class="text-uppercase">Transportation ManagemenT</p>
+                <p class="text-uppercase blog-tag">Transportation ManagemenT</p>
                 <h6 class="text-uppercase pb-3 border-3 border-bottom border-secondary">Understanding Freight Classification</h6>
-                <p>October 09, 2022</p>
+                <p class="blog-date">October 09, 2022</p>
               </div>
             </div>
             <!-- blog item 4 -->
             <div class="col">
               <div class="border border-1 border-primary-subtle rounded-4 p-3 h-100">
-                <p class="text-uppercase">Warehouse Management</p>
+                <p class="text-uppercase blog-tag">Warehouse Management</p>
                 <h6 class="text-uppercase pb-3 border-3 border-bottom border-secondary">Optimizing Warehouse Layout</h6>
-                <p>October 09, 2022</p>
+                <p class="blog-date">October 09, 2022</p>
               </div>
             </div>
           </div>
@@ -583,29 +602,31 @@
   </section>
 
   <!-- subscribe to newsletter -->
-  <section class="bg-white text-white position-relative">
-    <div class="container">
-      <div class="bg-secondary d-flex flex-wrap justify-content-between align-items-center px-5 py-4 rounded-4 mx-auto">
-        <div>
-          <h3 class="fw-bold">Subscribe to <br>Our newsletter</h3>
-        </div>
-        <div class="w-50">
-          <form action="#">
-            <div class="bg-primary d-flex rounded-3 w-100">
-              <input type="email" id="email" name="email" placeholder="Your email here..." class="rounded-3 border-1 w-75 px-2">
-              <a href="#" class="p-2 text-white text-decoration-none text-uppercase d-flex gap-2 ms-2">
-                <span class="fs-6">Submit</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </form>
+  <section class="subscribe-container">
+    <div class="subscribe-box">
+      <div class="container">
+        <div class="bg-secondary d-flex flex-wrap justify-content-between align-items-center px-5 py-4 rounded-4 mx-auto text-white">
+          <div>
+            <h3 class="fw-bold">Subscribe to <br>Our newsletter</h3>
+          </div>
+          <div class="w-auto">
+            <form action="#">
+              <div class="bg-primary d-flex rounded-3 w-100">
+                <input type="email" id="email" name="email" placeholder="Your email here..." class="rounded-3 border-1 w-75 px-2">
+                <a href="#" class="p-2 text-white text-decoration-none text-uppercase d-flex gap-2 ms-2">
+                  <span class="fs-6">Submit</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- footer -->
   <section class="bg-primary text-white">
-    <!-- footer -->
     <footer class="container pt-5">
       <!-- logo and nav -->
       <div class="d-md-flex justify-content-md-between align-items-center gap-md-5 pt-5">
@@ -613,7 +634,9 @@
           <!-- logo and sub info -->
           <div>
             <div class="mb-2">
-              <img src="/assets/logo-white.png" alt="" class="img-fluid">
+              <a href="index.html">
+                <img src="/assets/logo-white.png" alt="" class="img-fluid">
+              </a>
             </div>
             <div class="w-75">
               <p>
@@ -658,7 +681,7 @@
               </div>
               <div>
                 <p class="pb-1 d-inline-block border-3 border-bottom border-info">
-                  <a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a>
+                  <a href="contact.html" class="text-white-50 text-decoration-none text-nowrap">Contact Us</a>
                 </p>
               </div>
             </div>
