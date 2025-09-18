@@ -27,21 +27,35 @@ header {
   height: 41px;
 }
 
-.header-cta i {
-  width: 42.5px;
-  height: 42.5px;
+// .header-cta i {
+//   font-size: 100%;
+// }
+
+.header-cta {
+  display: flex;
+  align-items: last baseline;
 }
 
 .header-cta p:nth-of-type(1) {
   font-size: 12px;
+  margin-bottom: 0;
 }
 
 .header-cta p:nth-of-type(2) {
   font-size: 18px;
+  margin-top: 0;
 }
 
 header .request {
   font-size: 14px;
+}
+
+.header-nav-section {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 // nav
@@ -63,23 +77,28 @@ header .request {
   font-weight: 600;
   padding: 0;
   width: 100%;
+  text-align: center;
+}
+
+@media(max-width: 575px) {
+  header {
+    margin-bottom: 0;
+  }
+
+  .navv li {
+    text-align: left;
+  }
 }
 
 .navv a {
   width: 100%;
-  padding: 8px 4.8dvw;
+  padding: 8px;
   font-size: 14px;
   text-wrap: nowrap;
   text-decoration: none;
   display: block;
   background-color: $white;
   border: 0.1px solid $primary;
-}
-
-@media (max-width: 992px) {
-  .navv a {
-    padding: 8px 1rem;
-  }
 }
 
 .navbar .dropdown-menu {
@@ -99,6 +118,9 @@ header .request {
     top: 0;
     left: 0;
     margin-top: 3rem;
+    width: 100%;
+  }
+  .navbar .dropdown-menu {
     width: 100%;
   }
 }
@@ -136,7 +158,7 @@ header .request {
 
 .hero-desc {
   width: 50%;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 @media(max-width:998px) {
@@ -147,6 +169,7 @@ header .request {
 
 .hero-text {
   font-size: clamp(3.2rem, 6vh, 5rem);
+  line-height: 100%;
 }
 
 // landing page welcome section
@@ -167,9 +190,17 @@ header .request {
 }
 
 // landing page services section
+.services-sec h3 {
+  font-size: 36px;
+}
+
 .services-sec h4 {
   font-size: 18px;
   font-weight: 600;
+}
+
+.services-sec img {
+  margin-bottom: 4%;
 }
 
 .services-sec .service-desc {
@@ -179,7 +210,7 @@ header .request {
 
 .services-sec .sub-desc {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 // landing page why section
@@ -245,7 +276,8 @@ header .request {
 
 // landing page blog section
 .blog-sec {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
 }
 
 .truck h4 {
@@ -361,6 +393,7 @@ header .request {
 
 .contact-deets {
   margin-bottom: 6rem;
+  margin-top: 3rem;
 }
 
 .contact-page .cta {
@@ -379,6 +412,10 @@ header .request {
 
 // footer
 footer img {
-  width: 80%;
+  width: 60%;
   height: 100%;
+}
+
+.logo-sect p {
+  font-size: 13px;
 }

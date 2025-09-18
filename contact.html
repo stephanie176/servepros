@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- header -->
-  <header class="bg-white text-primary">
+  <header class="bg-white text-primary py-2">
     <div class="container pt-1">
       <!-- main head -->
       <div class="d-md-flex gap-3 justify-content-between align-items-center">
@@ -21,28 +21,208 @@
           </a>
         </div>
         <!-- contact and request -->
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="d-flex align-top header-cta">
-            <div>
-              <i class="bi bi-headset fs-1"></i>
+        <div class="d-none d-md-block">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="header-cta">
+              <div class="d-inline">
+                <i class="bi bi-headset fs-1"></i>
+              </div> 
+              <div class="d-inline">
+                <p class="text-nowrap fw-semibold">Got Question? Call us 24/7</p>
+                <p class="fw-semibold">0704 700 0305</p>
+              </div>
             </div>
-            <div>
-              <p class="m-0 text-nowrap fw-semibold">Got Question? Call us 24/7</p>
-              <p class="fw-semibold">0704 700 0305</p>
-            </div>
+            <a href="contact.html" class="ms-3 btn btn-secondary text-white text-nowrap request">
+              Request A Quote
+            </a>
           </div>
-          <a href="contact.html" class="ms-3 btn btn-secondary text-white text-nowrap request">
-            Request A Quote
-          </a>
+        </div>
+        <!-- mobile hamburger -->
+        <div class="header-nav-section d-block d-sm-none">
+          <div class="nav-sec">
+            <nav class="navbar navbar-expand-md w-100">
+              <div class="container h-100 position-relative">
+                <!-- toggle button -->
+                <button class="navbar-toggler border-1 ms-auto bg-white focus-ring-width" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse collapse-bar fw-semibold" id="main-nav">
+                  <div class="w-100 d-flex navv flex-column flex-md-row justify-content-center align-content-center">
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li class="dropdown w-100 position-static">
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                      </a>
+                      <div class="dropdown-menu p-3 bg-white">
+                        <div class="container nav-dropdown p-4 h-100 rounded-3 text-primary">
+                          <div>
+                            <h3>Services</h3>
+                            <p class="service-desc">
+                              At Servepros, we provide a comprehensive suite of logistics services designed to meet <br> the diverse needs of our clients:
+                            </p>
+                          </div>
+                          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 nav-services my-3">
+                            <!-- service 1 -->
+                            <div class="col">
+                              <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/support.png" class="img-fluid" alt="">
+                                  <p class="service-title">On-Demand Delivery:</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc">
+                                    Whether it's urgent or routine, we handle your packages with the utmost care and speed.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- service 2 -->
+                            <div class="col">
+                              <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/support.png" class="img-fluid" alt="">
+                                  <p class="service-title">Same-Day Delivery:</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc">
+                                    For urgent shipments that need to be delivered within hours.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- service 3 -->
+                            <div class="col">
+                              <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/world-distribution.png" class="img-fluid" alt="">
+                                  <p class="service-title">Next-Day Delivery:</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc">
+                                    Secure, reliable deliveries by the following day.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- service 4 -->
+                            <div class="col">
+                              <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/courier.png" class="img-fluid" alt="">
+                                  <p class="service-title">Scheduled Delivery:</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc">
+                                    Plan your shipments ahead of time to ensure convenience.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- service 5 -->
+                            <div class="col">
+                              <div class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-0 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/support.png" class="img-fluid" alt="">
+                                  <p class="service-title">Business Solutions:</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc">
+                                    Tailored delivery solutions to meet corporate and bulk shipment needs.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-100 bg-secondary rounded-3">
+                            <p class="text-white service-desc px-3 py-2">
+                              Our technology-driven platform ensures seamless service with real-time tracking, automated notifications, and responsive support, making the logistics experience hassle-free.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown w-100 position-static">
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                      </a>
+                      <div class="dropdown-menu p-3 bg-white">
+                        <div class="container nav-dropdown p-4 h-100 rounded-3 text-primary">
+                          <div>
+                            <h3>Resources</h3>
+                            <p class="service-desc">
+                              Stay updated on logistics trends, delivery tips, and Servepros news. Explore our <br> resources to get the most out of your delivery services:
+                            </p>
+                          </div>
+                          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 nav-services my-3">
+                            <!-- service 1 -->
+                            <div class="col">
+                              <a href="blog.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                                  <div class="d-flex gap-2">
+                                    <img src="/assets/support.png" class="img-fluid" alt="">
+                                    <p class="service-title">Blog</p>
+                                  </div>
+                                  <div>
+                                    <p class="service-desc text-wrap">
+                                      Industry insights and best practices.
+                                    </p>
+                                  </div>
+                              </a>
+                            </div>
+                            <!-- service 2 -->
+                            <div class="col">
+                              <a href="#" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/support.png" class="img-fluid" alt="">
+                                  <p class="service-title">Guides</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc text-wrap">
+                                    Step-by-step guides to maximize delivery efficiency.
+                                  </p>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- service 3 -->
+                            <div class="col">
+                              <a href="faq.html" class="bg-white border border-1 border-primary-subtle shadow-sm px-3 pb-2 pt-3 h-100 rounded-4">
+                                <div class="d-flex gap-2">
+                                  <img src="/assets/world-distribution.png" class="img-fluid" alt="">
+                                  <p class="service-title">FAQs</p>
+                                </div>
+                                <div>
+                                  <p class="service-desc text-wrap">
+                                    Answers to common questions about our services and processes.
+                                  </p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>   
     </div>
   </header>
 
   <!-- nav -->
-  <section class="nav-section">
+  <section class="nav-section d-none d-sm-block">
     <div class="nav-sec">
-      <nav class="navbar navbar-expand-md w-100">
+      <nav class="navbar navbar-expand-sm w-100">
         <div class="container h-100 position-relative">
           <!-- toggle button -->
           <button class="navbar-toggler border-1 ms-auto mb-1 bg-white focus-ring-width" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
@@ -50,7 +230,7 @@
           </button>
           <!-- navbar links -->
           <div class="collapse navbar-collapse collapse-bar fw-semibold" id="main-nav">
-            <div class="container d-flex navv flex-column flex-md-row justify-content-center align-content-center">
+            <div class="w-100 d-flex navv flex-column flex-sm-row justify-content-center align-content-center">
               <li>
                 <a href="index.html">Home</a>
               </li>
@@ -373,7 +553,7 @@
       <div class="d-md-flex justify-content-md-between align-items-center gap-md-5 pt-5">
         <div class="d-flex align-items-center justify-content-between py-4">
           <!-- logo and sub info -->
-          <div>
+          <div class="logo-sect">
             <div class="mb-2">
               <a href="index.html">
                 <img src="/assets/logo-white.png" alt="" class="img-fluid">
@@ -431,7 +611,7 @@
       </div>
       <hr>
       <!-- copyright and social media -->
-      <div class="d-flex justify-content-between align-items-center py-4">
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-between align-items-center py-4 logo-sect">
         <div>
           <p>Copyright ©2023 Servepro. All Rights Reserved</p>
         </div>
