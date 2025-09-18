@@ -11,24 +11,24 @@
 <body>
   <!-- header -->
   <header class="bg-white text-primary">
-    <div class="container py-1">
+    <div class="container pt-1">
       <!-- main head -->
-      <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+      <div class="d-md-flex gap-3 justify-content-between align-items-center">
         <!-- logo -->
-        <div class="h-50">
+        <div class="nav-logo mb-3 mb-md-0">
           <a href="index.html">
-            <img src="/assets/logo.png" class="img-fluid w-auto" alt="">
+            <img src="/assets/logo.png" class="img-fluid" alt="">
           </a>
         </div>
         <!-- contact and request -->
-        <div class="d-flex align-items-center">
-          <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-top header-cta">
             <div>
               <i class="bi bi-headset fs-1"></i>
             </div>
             <div>
-              <p class="m-0 text-nowrap">Got Question? Call us 24/7</p>
-              <p>0704 700 0305</p>
+              <p class="m-0 text-nowrap fw-semibold">Got Question? Call us 24/7</p>
+              <p class="fw-semibold">0704 700 0305</p>
             </div>
           </div>
           <a href="contact.html" class="ms-3 btn btn-secondary text-white text-nowrap">
@@ -219,35 +219,36 @@
   </section>
 
   <!-- hero section -->
-  <section class="blog-hero position-relative text-white mb-3 bg-primary">
+  <section class="contact-hero position-relative text-white mb-3 bg-primary">
     <!-- hero background image -->
     <div class=" w-100 d-md-flex justify-content-md-end h-100">
       <img src="/assets/hero-bg.png" alt="truck on map" class="img-fluid w-75 h-100">
     </div>
-
     <!-- hero section text -->
     <div class="position-absolute top-0 bottom-0 h-50 w-100 pt-5">
       <div class="container py-5">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1>Blog</h1>
-          <p>Industry insights and best practices</p>
+          <h1>Contact</h1>
+          <p class="text-center">
+            We're here to assist with all your logistics needs! Whether you're looking to schedule a delivery or have questions about our services, our team is ready to help.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- contact info and form -->
-  <section class="container my-5">
-    <div class="row row-cols-1 row-cols-md-2 g-3 text-primary mb-3">
+  <section class="container contact-deets">
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-primary mb-3 contact-page">
       <!-- get in touch -->
       <div class="col-12 col-md-5">
         <div class="h-100">
           <div>
-            <h2 class="fw-semibold">Get In Touch</h2>
-            <p>
+            <h2 class="fw-bold">Get In Touch</h2>
+            <p class="cta">
               We are here to answer any question you may have.
             </p>
-            <p>
+            <p class="cta">
               Feel free to reach via contact form.
             </p>
           </div>
@@ -255,31 +256,31 @@
             <!-- email -->
             <div class="d-flex gap-2">
               <div>
-                
+                <i class="bi bi-envelope text-secondary"></i>
               </div>
               <div>
-                <p>Email:</p>
-                <p>info@servepros.com</p>
+                <p class="cta mb-0">Email:</p>
+                <p class="contact-info">info@servepros.com</p>
               </div>
             </div>
             <!-- phone -->
             <div class="d-flex gap-2">
               <div>
-
+                <i class="bi bi-phone text-secondary"></i>
               </div>
               <div>
-                <p>Phone:</p>
-                <p>0704 700 0305</p>
+                <p class="cta mb-0">Phone:</p>
+                <p class="contact-info">0704 700 0305</p>
               </div>
             </div>
             <!-- address -->
             <div class="d-flex gap-2">
               <div>
-
+                <i class="bi bi-geo-alt text-secondary"></i>
               </div>
               <div>
-                <p>Address:</p>
-                <p>
+                <p class="cta mb-0">Address:</p>
+                <p class="contact-info">
                   Visit us at our Lagos or Ibadan office locations, or reach out via our website to discover why we are the preferred choice for on-demand delivery services in Nigeria.
                 </p>
               </div>
@@ -291,48 +292,48 @@
       <!-- contact form -->
       <div class="col-12 col-md-7">
         <div class="h-100">
-          <form action="#" class="border py-4 px-1">
+          <form action="#" class="border py-4 px-2">
             <div class="border border-1 border-primary-subtle p-3 rounded-4">
-              <div class="row row-cols-1 row-cols-md-2">
+              <div class="row row-cols-1 row-cols-md-2 mb-3">
                 <div class="col">
                   <div class="h-100">
-                    <label for="full-name" class="form-label">Full name</label>
+                    <label for="full-name" class="form-label contact-info">Full name</label>
                     <input type="text" id="full-name" class="form-control">
                   </div>
                 </div>
                 <div class="col">
                   <div class="h-100">
-                    <label for="email" class="form-label">Email Address</label>
+                    <label for="email" class="form-label contact-info">Email Address</label>
                     <input type="email" id="email" class="form-control">
                   </div>
                 </div>
               </div>
-              <div class="row row-cols-1 row-cols-md-2">
+              <div class="row row-cols-1 row-cols-md-2 mb-3">
                 <div class="col">
                   <div class="h-100">
-                    <label for="phone-number" class="form-label">Phone Number</label>
+                    <label for="phone-number" class="form-label contact-info">Phone Number</label>
                     <input type="tel" id="phone-number" class="form-control">
                   </div>
                 </div>
                 <div class="col">
                   <div class="h-100">
-                    <label for="service" class="form-label">What service are you looking for?</label>
+                    <label for="service" class="form-label contact-info">What service are you looking for?</label>
                     <input type="text" id="service" class="form-control">
                   </div>
                 </div>
               </div>
               <div>
-                <label for="message" class="form-label">Message</label>
-                <textarea name="message" id="message" rows="5" class="w-100"></textarea>
+                <label for="message" class="form-label contact-info">Message</label>
+                <textarea name="message" id="message" rows="5" class="form-message focus-ring p-2 w-100 rounded-3 border-1 border-info-subtle"></textarea>
               </div>
             </div>
-            <div class="my-3 px-3">
-              <input type="checkbox" name="terms-agreement" id="terms-agreement">
+            <div class="my-4 px-3">
+              <input type="checkbox" name="terms-agreement" id="terms-agreement" class="check-box">
               <label for="terms-agreement">
                 I am bound by the terms of the Service I accept Privacy Policy
               </label>
             </div>
-            <div>
+            <div class="container">
               <input type="submit" value="Send A Message" placeholder="Send a Message" class="btn btn-secondary text-white text-center w-100 rounded-3">
             </div>
           </form>
