@@ -321,6 +321,36 @@ header {
   font-size: 18px;
 }
 
+// faq page
+.faq-search {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-search .input-group {
+  flex-grow: 1;
+  flex-basis: 60%;
+  max-width: 580px;
+}
+
+.accordion-header button {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.accordion-body p {
+  font-size: 15px;
+  font-weight: 500;
+  color: $success;
+}
+
+.page-number {
+  margin-bottom: 5.3rem;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
 // footer
 footer img {
   width: 80%;
